@@ -2,6 +2,7 @@
 
 // include header files
 #include "introduction.h"
+#include "menu.h"
 
 using namespace std;
 
@@ -12,6 +13,8 @@ double player_balance;
 double fund_balance;
 
 // project-wide variables
+int week = 1;
+int year = 2024;
 int intro_question1_answer;
 
 // array for stocks held by player
@@ -21,6 +24,8 @@ int main()
 {
 
     introduction(); // call the intro function from the header file
+
+    menu(); // call the menu function from the header file
 
     return 0;
 }
